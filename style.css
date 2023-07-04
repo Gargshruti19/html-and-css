@@ -1,0 +1,44 @@
+.container{
+      display: flex;
+      flex-direction: row;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 260px;
+    width: 260px;
+    font-size: 40px;
+    transition: width 2s, height 2s, transform 2s;
+}
+.box:hover{
+    width: 300px;
+    height: 300px;
+    transform: rotate(360deg);
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+#box1{
+     position: absolute;
+     top: 50px;
+     left: 400px;
+     background-image: linear-gradient(hotpink , blue);
+}
+#box2{
+    position: absolute;
+    top: 250px;
+    left: 600px;
+    background-image: linear-gradient(red, black);
+    z-index: 1;
+}
+
+#box3{
+   position: absolute;
+   top: 450px;
+   left: 800px; 
+   background-image: linear-gradient(yellow, green);
+}
